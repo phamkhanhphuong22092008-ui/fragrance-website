@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #1C1C1C;
+  background-color: #FAFAFA;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+ h1, h2 {
+ font-family: 'Playfair Display', serif;
+ color: #1C1C1C;
+ margin: 20px 0;
+}
+
+ p {
+ margin: 15px auto;
+ font-size: 17px;
+ line-height: 1.5;
+ width: 90%;
+ max-width: 700px;
+}
+
+ a {
+ color: #C19A6B; 
+ text-decoration: none;
+ font-weight: 600;
+}
+
+ a:hover {
+  color: #B8860B; /* darker gold on hover */
+}
+
+ img {
+ width: 100%;
+ max-width: 250px;
+ margin-top: 15px;
+ border-radius: 8px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+ .ad-wrapper {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ margin: 25px 0;
+}
+
+ .ad-left, .ad-right {
+ width: 15%;
+}
+
+ .ad-left img, .ad-right img {
+ width: 100%;
+}
+
+ .ad-center {
+ width: 70%;
+}
+
+ .ad-center p {
+ width: 90%;
+ margin: 15px auto;
+ font-size: 17px;
+ line-height: 1.4;
+}
+
+ .menu {
+ display: flex;
+ justify-content: center;
+ gap: 30px;      
+ margin: 20px 0;
+}
+
+ .menu a {
+ text-decoration: none;
+ color: #C19A6B;
+ font-weight: 600;
+ font-size: 17px;
+}
+
+ .menu a:hover { 
+ color: #B8860B;
+}
+
+ .video-wrapper {
+ text-align: center;
+ margin: 20px auto;
+}
+
+ .video-wrapper video {
+  max-width: 100%;
+  height: 100%;
+  max-width: 600px
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto
+ }
+
+@media screen and (max-width: 768px) {
+  .menu {
+  flex-direction: column;
+  gap: 15px;
+ }
+}
