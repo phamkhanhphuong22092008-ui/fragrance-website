@@ -1,5 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap');
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFD700; 
+  padding: 10px 20px;
+}
+
+.navbar-left .logo {
+  display: flex;
+  align-items: center;
+  color: #000; 
+  font-weight: 700;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.navbar-left .logo img {
+  width: 50px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.navbar-right {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 25px;
+}
+
+.navbar-right li {
+  position: relative;
+}
+
+.navbar-right li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 5px;
+  display: block;
+}
+
+.navbar-right li a:hover {
+  color: #333;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFD700;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.dropdown-content li a {
+  padding: 8px 12px;
+  font-weight: 500;
+}
+
+.dropdown-content li a:hover {
+  background-color: #FFC107; 
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #1C1C1C;
@@ -105,5 +177,15 @@ body {
   flex-direction: column;
   gap: 15px;
  }
-
+  .navbar {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  .navbar-right {
+  flex-direction: column;
+  gap: 10px;
+ }
 }
+
+
+
