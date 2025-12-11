@@ -30,7 +30,7 @@ body {
 }
 
  a:hover {
-  color: #B8860B; /* darker gold on hover */
+  color: #B8860B; 
 }
 
  img {
@@ -105,4 +105,5 @@ body {
   flex-direction: column;
   gap: 15px;
  }
+
 }
